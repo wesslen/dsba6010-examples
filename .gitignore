@@ -1,5 +1,7 @@
 .DS_Store
-renv/
+renv/.gitignore
+renv/activate.R
+renv/settings.dcf
 renv
 renv/*
 # History files
