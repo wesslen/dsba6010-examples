@@ -1,0 +1,18 @@
+image:
+  file: .gitpod.Dockerfile
+tasks:
+  - name: rstudio
+    before: |
+      echo R_LIBS_USER=$GITPOD_REPO_ROOT/../.R/library > /home/gitpod/.Renviron
+      cp .gitpod/.Rprofile /home/gitpod/  
+      echo 'RSTUDIO_CONFIG_DIR=/workspace/dsba6010-examples/.gitpod' >> /home/gitpod/.profile
+    command: /usr/lib/rstudio-server/bin/rstudio-server start
+  - name: R
+    command: R
+ports:
+  - port: 8787
+    onOpen: open-browser
+  - port: 3000-8786
+    onOpen: ignore
+  - port: 8786-15000
+    onOpen: ignore   
