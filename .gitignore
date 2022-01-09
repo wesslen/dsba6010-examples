@@ -40,6 +40,4 @@ docs/
 po/*~
 # RStudio Connect folder
 rsconnect/
-# R profile
-.Rprofile
-!.gitpod/.Rprofile
+
