@@ -4,6 +4,7 @@ renv/activate.R
 renv/settings.dcf
 renv
 renv/*
+tmp/*
 # History files
 .Rhistory
 .Rapp.history
