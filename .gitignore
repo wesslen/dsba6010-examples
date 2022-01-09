@@ -41,3 +41,4 @@ po/*~
 rsconnect/
 # R profile
 .Rprofile
+!.gitpod/.Rprofile
