@@ -15,7 +15,7 @@ RUN R -e "cmdstanr::install_cmdstan(dir = '/workspace/.cmdstanr', cores = 4)"
 
 # rstudio setup
 COPY .gitpod/database.conf /etc/rstudio/database.conf
-COPY .gitpod/.Rprofile /usr/local/lib/R/etc/Rprofile.site
+# COPY .gitpod/.Rprofile /usr/local/lib/R/etc/Rprofile.site
 # install lib dependencies
 
 EXPOSE 8787
